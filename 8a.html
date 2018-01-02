@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" contect="libing, abingdesign@gmail.com" />
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/libing.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<style>
+			body{font-size: 14px;}
+			.t1{position: relative;}
+			.ok{position: absolute; top: 425px; left: 840px;}
+			.dui, .cuo{}
+			.close{width: 18px; height: 18px; position: absolute; right: 10px; top: 10px;}
+			.tList{position: absolute; left: 620px; top: 82px;}
+			.xz1{background: url(img/quizradio.png) 0px 9px no-repeat; width: 100px; height: 27px; float: left;cursor: pointer;    margin-top: 2px;}
+			.xz1c{background-image: url(img/quizradiochecked.png);}
+			.xz2{background: url(img/bg_quizChoiceFeedback.png) 0px 39px no-repeat; width: 29px; height: 27px; float: left;    margin-top: 2px;}
+			.jg1{background-position: 0px -33px;}
+			.jg2{background-position: 0px -75px;}
+			.jg3{background-position: 0px 10px;}
+			.ok{cursor: pointer;}
+			.close{cursor: pointer;}
+			.addWidth{width: 125px;}
+		</style>
+	</head>
+
+<body>
+
+<div class="t1">
+	<div style="background-color:#2a80c5;height:504px; width:330px;">
+		<div class="animated" style="left: 23px; top: 30px; font-size: 20px; font-weight:bold;">测试&nbsp;2/3</div>
+		<div class="animated" style="left: 23px; top: 95px; font-size: 16px;">2. DQ380 变速箱有哪些技术特点？</div>
+		<div class="animated" style="left: 23px; top: 195px; font-size: 16px;">请点击选择你认为正确的答案，再次点<br/>击可取消选择。</div>
+		<div class="animated" style="left: 23px; top: 295px; font-size: 16px;">点击“确定”按钮后，将会收到反馈信<br/>息。</div>
+	</div>
+	
+	<img src="pic/t13.png" class="animated1" style="left: 360px; top: 50px; "/>
+	<img src="pic/queren.png" class="ok"/>
+	<div class="tList">
+		<div class="xz">
+			<div class="xz1"></div><div class="xz2"></div><div class="xz1 yes addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1 yes"></div><div class="xz2"></div><div class="xz1 addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1"></div><div class="xz2"></div><div class="xz1 yes addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1 yes"></div><div class="xz2"></div><div class="xz1 addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1 yes"></div><div class="xz2"></div><div class="xz1 addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1 yes"></div><div class="xz2"></div><div class="xz1 addWidth"></div><div class="xz2"></div>
+		</div>
+		<div class="xz">
+			<div class="xz1 yes"></div><div class="xz2"></div><div class="xz1 addWidth"></div><div class="xz2"></div>
+		</div>
+	</div>
+	<div id="dialog1" class="dui hide"  title="恭喜你，回答正确！">
+		DQ380重87KG，与DQ250比较减轻了重量，扭矩却提升高达420NM，配备有两个多片湿式离合器。它取消了倒车档上的倒车齿轮轴，简化了机构，通过3根轴进行动力传递，使结构更为紧凑。机油滤清器设计为终身可用，无需在售后服务时更换。
+	</div>
+	<div id="dialog2" class="cuo hide" title="很遗憾，回答错误！">
+		DQ380重87KG，与DQ250比较减轻了重量，扭矩却提升高达420NM，配备有两个多片湿式离合器。它取消了倒车档上的倒车齿轮轴，简化了机构，通过3根轴进行动力传递，使结构更为紧凑。机油滤清器设计为终身可用，无需在售后服务时更换。
+	</div>
+</div>
+
+<script type="text/javascript">
+	function GetQueryString(name)
+	{
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r!=null)return  unescape(r[2]); return null;
+	}
+
+	$(document).ready(function(){
+		$(".xz1").click(function(){
+			$(this).siblings(".xz1").removeClass("xz1c").attr("data-c", 0);;
+			$(this).addClass("xz1c").attr("data-c", 1);;
+		})
+		
+		var daan = GetQueryString("daan");
+		var duiNum = 0;
+		$(".ok").click(function(){
+			$(this).css("display", "none");
+			$(".yes").each(function(){
+				if($(this).attr("data-c")==0){
+					$(this).next().addClass("jg3");
+				}else if($(this).attr("data-c")==1){
+					$(this).next().addClass("jg1");
+					duiNum++;
+				}else{
+					$(this).next().addClass("jg2");
+				}
+			})
+			console.log(duiNum);
+			if(duiNum == 7){
+				daan = Number(daan) + 1;
+				$( "#dialog1" ).dialog({width:580,close: function( event, ui ) {location.href = "8b.html?daan=" + daan}});
+			}else{
+				$( "#dialog2" ).dialog({width:580,close: function( event, ui ) {location.href = "8b.html?daan=" + daan}});
+			}
+		})
+		$(".close").click(function(){
+			location.href = "8b.html"
+		})
+	})
+</script>
+</body>
+
+</html>

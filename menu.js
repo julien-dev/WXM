@@ -1,0 +1,11 @@
+{
+   "id":"DQ380_1",
+   "name":"DQ380基本信息",
+   "items":[
+      {
+         "id":"uuid_1",
+         "name":"DQ380基本信息",
+         "file":"index.html"
+      }
+   ]
+}

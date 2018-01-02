@@ -1,0 +1,291 @@
+body{margin: 0; padding: 0; min-width: 980px; font-family: arial, "microsoft yahei"; color: #666; background: #fff; max-height: 768px; }
+input, textarea, button, div, a{ -webkit-tap-highlight-color:rgba(0,0,0,0); }
+div{border: 0px solid #f00; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+img{border:0} 
+.imgBlock img{display: block;}
+.arrow-down{ width: 0px; height: 0px; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #f00; font-size: 0px; line-height: 0px; margin: 0 auto;}
+.a{border: 1px solid #f00;}
+.c{cursor:pointer} /*é¼ æ ‡å˜æˆå°æ‰‹*/
+.hide{display: none;}
+.clear{clear: both;}
+.flex{
+	display: flex;/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	display: -webkit-flex;/* NEW - Chrome */
+	display: -webkit-box;/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;/* TWEENER - IE 10 */
+}
+.flex1{
+	flex: 1; 
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari å’Œ Chrome */
+	box-flex:1.0;
+}
+
+#swiper-content,.pagelist { width: 980px; height: 504px; background: #fff; position: relative;}
+#swiper-menu span{position: absolute;left: 0;top: 0px; margin-top: -20px; font-size: 12px;color: #333333;/* font-weight: bold; */margin-top: -7px;}
+.menu-btn{width: 980px;position: absolute;top: -80px;height: 80px;z-index: 14;background:#e1e7ec;border-bottom: 0px solid #efefef;}
+.menu-btn .swiper-button-next{width: 10px; height: 30px; top: 51px; margin-right: -3px;  background-size: 100% 100%;}
+.menu-btn .swiper-button-prev{width: 10px; height: 30px; top: 51px; margin-left: -3px;  background-size: 100% 100%;}
+.menu-open{width:100px; height:30px; line-height: 30px; text-align: center; border-radius: 5px 5px 0 0; background: #fff; position: absolute; left: 50%; top: 604px; margin-left: -50px; z-index: 20; font-size: 14px;}
+.menu-open span{color: #f90;}
+#swiper-menu img{width: 84px; height: 40px; position: absolute; top: 18px;}
+.lb-foot .swiper-container{width: 940px; height: 90px; position: absolute; top: -70px; left: 20px; z-index: -1; opacity: 0;}
+
+.iframe{width: 980px; height: 504px; background: #fff; frameborder:0; scrolling:no; }
+
+.lb-logo{width: 980px; height: 100px; margin: 0 auto; background: #fff url(../img/logo.png) no-repeat 20px 20px; font-size: 28px; text-align: right; line-height: 100px; padding: 0px 20px 0 0; font-weight: bold;}
+.lb-foot{width: 980px; height: 30px; margin: 0 auto; background: #fff; text-align: left; color: #999; line-height: 30px; position: relative;}
+.lb-menu{padding-left: 20px;}
+/*.lb-help{position: absolute; bottom: 0; right: 20px; }*/
+/*.lb-precent{width: 0%; height: 60px; background: #ff0; position: absolute; bottom: 0; opacity: .05;}*/
+
+.bg img{widows: 980px; height: 504px; margin: 5px;}
+
+.ani,.animated{position: absolute; color: #fff;}
+.animated1{position: absolute; color: #000;}
+
+.s1-q123{width: 100%; height: 40px; line-height: 40px;}
+
+
+.close{width: 100%; background: url(../img/close.png) top right no-repeat; background-size: 18px 18px; padding-right: 20px;font-weight: bold;}
+.span123{color: #f90; border: 1px solid #ccc; border-radius: 4px; padding: 2px 6px; margin-right: 5px; font-size: 12px;}
+.span1234{color: #f90; border: 1px solid #ccc; border-radius: 4px; padding: 2px 6px; margin-right: 5px; font-size: 12px;}
+.span1{color: #fff; background: #f90; border: 1px solid #f90;}
+.write{background: url(../img/disrupterTraining.png) left top no-repeat; background-size: auto 100%; width: 100px; height: 100px; position: absolute;}
+.gth{background: url(../img/disrupterInfo.png) left top no-repeat; background-size: auto 100%; width: 100px; height: 100px; position: absolute;}
+.iconVisit{width: 20px; height: 20px; background: url(../img/visit.png); position: absolute; right: 2px; top: 40px;}
+.hot{width: 23px; height: 27px; background: url(../img/hotspotLink.png) left top no-repeat; background-size: auto 100%;}
+.add{width: 23px; height: 27px; background: url(../img/hotspotAnimation.png) left top no-repeat; background-size: auto 100%;}
+/*.light{width: 23px; height: 27px; background: url(../img/disrupterHint.png) left top no-repeat; background-size: auto 100%;}*/
+.light{width: 111px; height: 111px; background: url(../img/disrupterHint.png) 0 0 no-repeat; background-size: auto 100%; position: absolute;}
+
+.p4imglist img, .p6imglist img{width: 80px; border: 2px solid #fff; margin-right: 10px;}
+.hotPop{background: #EFEFEF; font-size: 12px; border: 3px solid #fff; padding: 5px;}
+
+
+.titleline{border-bottom: 1px solid #CCCCCC; padding: 0 66px 0 22px;}
+.leftBack{position: absolute; left: -465px; top: 80px; background-color: #fff; width: 480px; font-size: 12px; padding: 10px 20px 10px 10px; background-image: url(../img/3back.png); background-repeat: no-repeat; background-position: 470px 50%;}
+.leftNext{position: absolute; left: 0px; top: 80px; background-color: #fff; width: 15px; height: 100px; font-size: 12px; background-image: url(../img/3next.png); background-repeat: no-repeat; background-position: 50% 50%;}
+.popTest{position: absolute;width: 600px;top: 70px;left: 180px;background-color: #fff;border: 8px solid #fff;}
+.popTestTitle{width: 100%; background-image: url(../img/close.png); background-size: 15px 15px; background-repeat: no-repeat; background-position: right top;}
+.popTestContent{background-color: #eee; margin: 15px 0; padding: 10px; font-size: 16px;}
+
+.answerSee1, .answerSee2, .answerSee3,.tryAgain1, .tryAgain2, .tryAgain3{background: #f00; border-radius: 4px; padding: 4px 8px; margin-left: 5px; font-size: 12px; color: #fff;}
+.answerNo{ margin: 5px 0;}
+.answerNo span{
+	font-weight:bold;
+}
+.answerYes, .answerTxt{ margin: 6px 0;}
+.answerYes span{
+	font-weight: bold;
+}
+.maskAnswer{position: absolute;left: 0;top: 30px;width: 600px;/* background: #000; */z-index: 1000;}
+
+.inputJS{margin: 60px 20px;}
+
+.swiper-button-prev{background: url(../img/s-btn-prev.png); width: 16px; height:28px; top: 630px; left: 43%;}
+.swiper-button-next{background: url(../img/s-btn-next.png); width: 16px; height:28px; top: 632px; left:57%;}
+.mask{width: 980px; height: 504px; background: #000; opacity: .5; position: absolute; left: 0; top: 0;}
+
+/*.testRadio li, .testCheckbox li{list-style-type: upper-alpha; padding: 10px 5px; border-bottom: 1px dashed #ccc;}*/
+.liChoose{background: #ffcc99; color: #000; font-weight: bold;}
+.testBtnOk{width: 100%; text-align: center;}
+
+.sBorder{border-right: 1px dashed #333333; width:55px; height: 58px; position: absolute; right: -5px; top: 0;}
+.btnBg{background: url(../pic/g3.png) 0% 50% no-repeat;background-size: auto 100%;height: 33px; width:109px;  font-size: 14px;position: absolute;top: 254px;left: 40px;line-height: 28px;padding: 0 6px 0 27px;color: #fff;}
+.btnBg1{height: 33px; font-size: 14px;position: absolute;top: 254px;left: 40px;line-height: 26px;color: #fff;width:107px;}
+
+/**add by tomh**/
+
+.radio-btn input[type="radio"], .check-box input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.inputJs ul{
+	list-style-type:none;
+}
+
+.check-box {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 7px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1px #FF9900;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ededed", GradientType=0);
+    border: 1px solid #FF9900;
+}
+.check-box i {
+    background: url("css/check_mark.png") no-repeat center center;
+    position: absolute;
+    left: 3px;
+    bottom: -15px;
+    width: 16px;
+    height: 16px;
+    opacity: .5;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    -webkit-transform:rotateZ(-180deg);
+    -moz-transform:rotateZ(-180deg);
+    -o-transform:rotateZ(-180deg);
+    transform:rotateZ(-180deg);
+}
+.checkedBox {
+    -moz-box-shadow: inset 0 0 5px 1px #ccc;
+    -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+    box-shadow: inset 0 0 5px 1px #ccc;
+    border-bottom-color: #fff;
+}
+.checkedBox i {
+    bottom: 2px;
+    -webkit-transform:rotateZ(0deg);
+    -moz-transform:rotateZ(0deg);
+    -o-transform:rotateZ(0deg);
+    transform:rotateZ(0deg);
+}
+/*Custom radio button*/
+ .radio-btn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    margin: 3px 7px 0 0;
+    cursor: pointer;
+    position: relative;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #FF9900;
+    box-shadow: 0 0 1px #FF9900;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ededed", GradientType=0);
+}
+.checkedRadio {
+    -moz-box-shadow: inset 0 0 5px 1px #ccc;
+    -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+    box-shadow: inset 0 0 5px 1px #ccc;
+}
+.radio-btn i {
+    border: 1px solid #E1E2E4;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.checkedRadio i {
+    background-color: #898A8C;
+}
+
+li span {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+.testBtnOk img{
+	right: 0px;
+    bottom: -3px;
+    position: absolute;
+}
+
+.xyyBtnOk img{
+	right: 0px;
+    bottom: -3px;
+    position: absolute;
+}
+
+.zqdaBtnOk img{
+	right: 120px;
+    bottom: -3px;
+    position: absolute;
+}
+
+.zsycBtnOk img{
+	right: 0px;
+    bottom: -3px;
+    position: absolute;
+}
+
+.testBtnOk  img{
+	/*width:58px;*/
+}
+
+#input3 ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+#input3 .sortable0,#input3 .sortable1{ list-style-type: none; margin: 0; padding: 0;  width: 100%; text-align: center; }
+#input3  .sortable1{
+	height: 44px;
+    width: 160px;
+  }
+#input3  .sortable0{
+	padding:15px 0px;
+  }
+#input3 .sortable0 li,#input3 .sortable1 li{padding:4px 0px; font-size: 14px;  font-weight:bold; background:none; border:0px;cursor: pointer;
+	}
+#input3 .sortable1 li{
+	margin: 3px;
+	padding:9px 0px;
+ }
+#input3 .sortable0 li{
+	background-color: #fff;
+ }
+.ui-dialog-titlebar .ui-button .ui-button-text{
+	display:none;
+}
+
+.bordertop{
+	border-top:1px dashed #FF9900;
+	padding-top: 10px;
+}
+#id-swiper-button-next {
+    background-image: url(../img/s-btn-next.png);
+    right: 10px;
+    left: auto;
+}
+#id-swiper-button-prev {
+    background-image: url(../img/s-btn-prev.png);
+    left: 10px;
+    right: auto;
+}
+.ui-dialog-titlebar{
+	font-family: 微软雅黑;
+}
+
+.ui-dialog-content{
+	font-family: 微软雅黑;
+}
+
+.ui-dialog .ui-dialog-title{
+	font-size:15.4px;
+}

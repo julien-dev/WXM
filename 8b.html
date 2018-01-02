@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/libing.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="css/Zmy.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<style>
+			#input3 .sortable1 {
+			height: 44px;
+			width: 160px;
+			}
+			.ok{position: absolute; top: 425px; left: 840px; width:109px;cursor: pointer;}
+			.dui, .cuo{font-size:14px; }
+			.dui p, .cuo p{
+				margin-bottom:5px;
+			}
+			.close{width: 18px; height: 18px; position: absolute; right: 10px; top: 10px;}
+
+			#input3 .sortable0{
+				width:160px;
+				float:left;
+				margin-right:45px;
+			}
+			.ui-dialog{
+				z-index:1000;
+			}
+			.xz1{background: url(img/quizradio.png) 30px 9px no-repeat; width: 100px; height: 27px; float: left;cursor: pointer; margin-top: 2px;}
+			.xz1c{background-image: url(img/quizradiochecked.png);}
+			.xz2{background: url(img/bg_quizChoiceFeedback.png) 0px 39px no-repeat; width: 20px; height: 27px; float: left; margin-top: 2px;position: absolute;}
+			.jg1{background-position: 0px -33px;}
+			.jg2{background-position: 0px -75px;}
+			.jg3{background-position: 0px 10px;}
+		</style>
+	</head>
+
+	<body style="background-color:#e0e7eb;">
+	<div style="background-color:#2a80c5;height:504px; width:330px;">
+		<div class="animated" style="left: 23px; top: 30px; font-size: 20px; font-weight:bold;">测试&nbsp;3/3</div>
+		<div class="animated" style="left: 23px; top: 95px; font-size: 16px;">3.你掌握 DQ380 变速箱的各部件名称<br/>了吗？</div>
+		<div class="animated" style="left: 23px; top: 195px; font-size: 16px;">请点击选择你认为正确的答案，再次点<br/>击可取消选择。</div>
+		<div class="animated" style="left: 23px; top: 295px; font-size: 16px;">点击“确定”按钮后，将会收到反馈信<br/>息。</div>
+	</div>
+	
+	<img src="pic/queren.png" class="ok"/>
+
+	<div class="popTest" style="top: 0px; left:349px;width:630px; border: 0; z-index:1000; color:#E0E7EB; background: #E0E7EB;">
+    	<div class="div123" style=" background-color: #e0e7eb; margin-bottom:10px;">		
+
+			<div class="popTestContent swiper-no-swiping pt7" style="font-size:16px;background-color: #e0e7eb; margin-bottom:10px; padding:0;">
+	    		<div class="inputJS" id="input3" style="margin:0; height:290px;">
+					<input type="hidden" class="single-slider testInput" value="" data-answer="9" />
+				
+					<img class="animated  delay0 " style="margin-top:20px; width:500px; margin-left:20px;" src="pic/h1.png"/>
+
+					<div style="margin:20px 5px 0px 0px;position: absolute; top: 300px;">
+					<ul id="sortable01" class="droptrue sortable0 aa" style="height: 24px;border:0px;" data-bz="1">
+						<li id="aa" class="ui-state-default" data-as="a" style=""><span class="txt">加压机油滤清器</span></li>
+					</ul>
+					<ul id="sortable02" class="droptrue sortable0 bb" style="height: 24px;" data-bz="1">
+						<li id="bb" class="ui-state-default" data-as="b"><span class="txt">油冷却器</span></li>
+					</ul>
+					<ul id="sortable03" class="droptrue sortable0 cc" style="height: 24px;" data-bz="1">
+						<li id="cc" class="ui-state-default" data-as="c"><span class="txt">多片式离合器</span></li>
+					</ul>
+					<ul id="sortable04" class="droptrue sortable0 dd" style="height: 24px;" data-bz="1">
+						<li id="dd" class="ui-state-default" data-as="d"><span class="txt">油泵</span></li>
+					</ul>
+					<ul id="sortable05" class="droptrue sortable0 ee" style="height: 24px;" data-bz="1">
+						<li id="ee" class="ui-state-default" data-as="e"><span class="txt">机械电子控制单元</span></li>
+					</ul>
+					
+
+					</div>
+ 
+					<ul id="sortable11" class="dropfalse sortable1" style="position: absolute;left: 20px; top: 248px;" data-aq="c">
+
+					</ul>
+					<div id="xz11" class="xz2" style="top: 245px; left: 180px;"></div>
+
+					
+					<ul id="sortable12" class="dropfalse sortable1" style="position: absolute;left: 20px; top: 36px;" data-aq="a">
+
+					</ul>
+					<div id="xz12"  class="xz2" style="top: 30px; left: 180px;"></div>
+ 
+					<ul  id="sortable13" class="dropfalse sortable1" style="position: absolute;left: 358px; top: 36px;" data-aq="b">
+					</ul>
+					<div id="xz13"  class="xz2" style="top: 30px; left: 520px;"></div>
+
+					
+
+					<ul id="sortable14" class="dropfalse sortable1" style="position: absolute;left: 358px; top: 107px;" data-aq="e">
+					</ul>
+					<div id="xz14"  class="xz2" style="top: 100px; left: 520px;"></div>
+
+					
+
+					<ul id="sortable15" class="dropfalse sortable1" style="position: absolute;left: 358px; top: 248px;" data-aq="d">
+					</ul>
+					<div id="xz15"  class="xz2" style="top: 245px; left: 520px;"></div>
+
+				
+
+
+					<br style="clear:both">
+
+				</div>
+
+
+	    		
+	    		<br />
+	    		<div class="answerYes hide">回答正确</div>
+	    		<div class="answerNo hide">回答错误，您可以<span class=" c tryAgain3">再试一次</span>，或<span class=" answerSee3 c">查看答案</span></div>
+	    	</div>
+
+
+
+			
+    	</div>
+    </div>
+
+	<div id="dialog1" class="dui hide" title="恭喜你，回答正确！">
+	    <p>各部件正确位置如下：</p>
+		<img class="" style="" src="pic/t15.png"/>
+	</div>
+	<div id="dialog2" class="cuo hide" title="很遗憾，回答错误！">
+		<p>各部件正确位置如下：</p>
+		<img class="" style="" src="pic/t15.png"/>
+	</div>
+
+
+
+
+
+
+
+		</div>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/btn.js"></script>
+		<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$(".popTestTitle").click(function(){
+					$(this).parent().slideToggle();
+					$(".mask").hide();
+				})
+	
+				$(".write").click(function(){
+					$(".popTest").slideToggle();
+					$(".mask").show();
+				})
+
+
+
+				$(".fun").each(function(index) {
+					$(this).click(function() {
+						$(".show").eq(index).fadeIn();
+					})
+
+				});
+				//close
+				$(".close").click(function(){
+					$(".show").fadeOut();
+				});
+			});
+		</script>
+
+<script>
+$('input[name="radio-btn"]').wrap('<div class="radio-btn"><i></i></div>');
+$('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+
+$(".radio-btn").on("click", function () {
+    var _this = $(this),
+        block = _this.parent().parent();
+    block.find("input:radio").attr("checked", false);
+    block.find(".radio-btn").removeClass("checkedRadio");
+    _this.addClass("checkedRadio");
+    _this.find("input:radio").attr("checked", true);
+});
+
+
+
+$.fn.toggleCheckbox = function () {
+    this.attr("checked", !this.attr("checked"));
+}
+$(".check-box").on("click", function () {
+    $(this).find(":checkbox").toggleCheckbox();
+    $(this).toggleClass("checkedBox");
+});
+
+
+
+
+$(document).ready(function() {
+  $(".testBtnOk1 img").click(function(){
+	 $(this).css("display", "none");
+	 $("#q1z").show();
+	 cc = 0;
+	 $("#input1 .subject-page").each(function(){
+
+		 if ($(this).attr("data-index") != $(this).children(".btn-select").find("input[name='radio-btn'][checked]").val())
+		 {
+			 return false;
+		 }else{
+			cc++;
+		 }
+	 
+	 });
+	 if (cc == 10)
+	 {
+		 $(this).parent().siblings(".answerYes").fadeOut().fadeIn();
+		 $(this).parent().siblings(".answerNo").hide();
+		 $(this).parent().siblings(".answerTxt").hide();
+	 }else{
+		$(this).parent().siblings(".answerNo").fadeOut().fadeIn();
+		$(this).parent().siblings(".answerYes").hide();
+		$(this).parent().siblings(".answerTxt").hide();
+	 } 
+});
+
+$(".tryAgain1").click(function(){
+
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().hide();
+	$(this).parent().siblings(".answerTxt").hide();
+	 $("#q1z").hide();
+	$(this).parent().siblings(".testBtnOk").children("img").css("display","block");
+
+	$("#input1 input[name='radio-btn'][checked]").attr("checked", false);
+	$("#input1 .radio-btn").removeClass("checkedRadio");
+	$("#input1 .btn-select").css("color", "#000");
+	$("#input1 .btn-select").css("font-weight", "normal");
+});
+
+
+$(".answerSee1").click(function(){
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().siblings(".answerNo").hide();
+	$(this).parent().siblings(".answerTxt").hide();
+
+	$("#q1z").show();
+
+	$("#input1 input[name='radio-btn'][checked]").attr("checked", false);
+	$("#input1 .radio-btn").removeClass("checkedRadio");
+
+	 $("#input1 input[name='radio-btn']").each(function(){
+		 if ($(this).parent().parent().parent().parent().attr("data-index") == $(this).val())
+		 {
+			 $(this).parent().parent().parent().css("color", "#008000");
+			 $(this).parent().parent().parent().css("font-weight", "bold");
+		 }else{
+			cc++;
+		 }
+	 
+	 });
+	
+});
+
+
+  $(".testBtnOk2 img").click(function(){
+	 $(this).css("display", "none");
+	 $("#q2z").show();
+	 cc = 0;
+	 $("#input2 .subject-page").each(function(){
+
+		 if ($(this).attr("data-index") != $(this).children(".btn-select").find("input[name='radio-btn'][checked]").val())
+		 {
+			 return false;
+		 }else{
+			cc++;
+		 }
+	 
+	 });
+	 if (cc == 8)
+	 {
+		 $(this).parent().siblings(".answerYes").fadeOut().fadeIn();
+		 $(this).parent().siblings(".answerNo").hide();
+		 $(this).parent().siblings(".answerTxt").hide();
+	 }else{
+		$(this).parent().siblings(".answerNo").fadeOut().fadeIn();
+		$(this).parent().siblings(".answerYes").hide();
+		$(this).parent().siblings(".answerTxt").hide();
+	 } 
+});
+
+$(".tryAgain2").click(function(){
+
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().hide();
+	$(this).parent().siblings(".answerTxt").hide();
+	 $("#q2z").hide();
+	$(this).parent().siblings(".testBtnOk").children("img").css("display","block");
+
+	$("#input2 input[name='radio-btn'][checked]").attr("checked", false);
+	$("#input2 .radio-btn").removeClass("checkedRadio");
+	$("#input2 .btn-select").css("color", "#000");
+	$("#input2 .btn-select").css("font-weight", "normal");
+});
+
+
+$(".answerSee2").click(function(){
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().siblings(".answerNo").hide();
+	$(this).parent().siblings(".answerTxt").hide();
+
+	$("#q2z").show();
+
+	$("#input2 input[name='radio-btn'][checked]").attr("checked", false);
+	$("#input2 .radio-btn").removeClass("checkedRadio");
+
+	 $("#input2 input[name='radio-btn']").each(function(){
+		 if ($(this).parent().parent().parent().parent().attr("data-index") == $(this).val())
+		 {
+			 $(this).parent().parent().parent().css("color", "#008000");
+			 $(this).parent().parent().parent().css("font-weight", "bold");
+		 }else{
+			cc++;
+		 }
+	 
+	 });
+	
+});
+
+
+ $(".testBtnOk3 img").click(function(){
+	$("ul.droptrue").sortable( "option", "disabled", true );
+	$("ul.dropfalse").sortable( "option", "disabled", true );
+
+	d1 = $("#sortable11").attr("data-aq") == $("#sortable11").children("li").attr("data-as") ? true : false;
+	d2 = $("#sortable12").attr("data-aq") == $("#sortable12").children("li").attr("data-as") ? true : false;
+	d3 = $("#sortable13").attr("data-aq") == $("#sortable13").children("li").attr("data-as") ? true : false;
+	d4 = $("#sortable14").attr("data-aq") == $("#sortable14").children("li").attr("data-as") ? true : false;
+	d5 = $("#sortable15").attr("data-aq") == $("#sortable15").children("li").attr("data-as") ? true : false;
+
+
+	if(d1 && d2 && d3 && d4 && d5){
+		$(this).parent().siblings(".answerYes").fadeOut().fadeIn();
+		$(this).parent().siblings(".answerNo").hide();
+		$(this).parent().siblings(".answerTxt").hide();
+		
+	}else{
+		$(this).parent().siblings(".answerYes").hide();
+		$(this).parent().siblings(".answerNo").fadeOut().fadeIn();
+		$(this).parent().siblings(".answerTxt").hide();
+	}
+	$(this).parent().css("display","none");
+});
+
+$(".tryAgain3").click(function(){
+
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().hide();
+	$(this).parent().siblings(".answerTxt").hide();
+	rebuild();
+
+	$(this).parent().siblings(".testBtnOk").css("display","block");
+
+
+});
+
+
+$(".answerSee3").click(function(){
+	$(this).parent().siblings(".answerYes").hide();
+	$(this).parent().siblings(".answerNo").hide();
+	$(this).parent().siblings(".answerTxt").hide();
+
+	$( "ul.dropfalse" ).empty();
+	$( "ul.dropfalse" ).sortable( "option", "disabled", true );
+
+	$( "#sortable11" ).append('<li id="cc" class="ui-state-default" data-as="c"><span style="color:#008000;">多片式离合器</span></li>');
+	$( "#sortable12" ).append('<li id="aa" class="ui-state-default" data-as="a"><span style="color:#008000;">加压机油滤清器</span></li>');
+	$( "#sortable13" ).append('<li id="bb" class="ui-state-default" data-as="b"><span style="color:#008000;">油冷却器</span></li>');
+	$( "#sortable14" ).append('<li id="ee" class="ui-state-default" data-as="e"><span style="color:#008000;">机械电子控制单元</span></li>');
+	$( "#sortable15" ).append('<li id="dd" class="ui-state-default" data-as="d"><span style="color:#008000;">油泵</span></li>');
+
+	$( "ul.droptrue" ).empty();
+
+	$(this).parent().siblings(".testBtnOk").css("display","none");
+	
+});
+
+})
+
+
+function rebuild(){
+	$( "ul.dropfalse" ).empty();
+	$("ul.droptrue").sortable( "option", "disabled", false );
+	$("ul.dropfalse").sortable( "option", "disabled", false );
+	$( "ul.droptrue" ).empty();
+	$( "ul#sortable01" ).append('<li id="aa" class="ui-state-default" data-as="a" style=""><span class="txt">加压机油滤清器</span></li>');
+	$( "ul#sortable02" ).append('<li id="bb" class="ui-state-default" data-as="b"><span class="txt">油冷却器</span></li>');
+	$( "ul#sortable03" ).append('<li id="cc" class="ui-state-default" data-as="c"><span class="txt">多片式离合器</span></li>');
+	$( "ul#sortable04" ).append('<li id="dd" class="ui-state-default" data-as="d"><span class="txt">油泵</span></li>');
+	$( "ul#sortable05" ).append('<li id="ee" class="ui-state-default" data-as="e"><span class="txt">机械电子控制单元</span></li>');
+	
+
+	
+						
+						
+						
+}
+
+
+
+$(function() {
+    $( "ul.droptrue" ).sortable({
+      connectWith: ".dropfalse",
+	  cursor: "move"
+    });
+ 
+    $( "ul.dropfalse" ).sortable({
+      connectWith: ".dropfalse",
+	  cursor: "move",
+	  receive: function( event, ui ) {
+		//$(this).sortable( "option", "disabled", true );
+		//ui.item.children(".txt").addClass("hide");
+		//ui.item.css("width", "100%");
+		//$(this).empty();
+		id = ui.item.attr("id");
+		if ($(this).children('li').length > 1)
+		{
+			if (ui.sender.attr('data-bz') == 1)
+			{
+				idt = $(this).children("li:not(#" + id + ")").attr("id");
+				$('.' + idt).empty();
+				$('.' + idt).append($(this).children("li:not(#" + id + ")"));
+			}else{
+				ui.sender.empty();
+				ui.sender.append($(this).children("li:not(#" + id + ")"));
+			}
+		}
+	  },
+	 
+    });
+
+
+ 
+   
+  });
+
+
+  
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+</script>
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".xz1").click(function(){
+			$(this).siblings(".xz1").removeClass("xz1c").attr("data-c", 0);;
+			$(this).addClass("xz1c").attr("data-c", 1);;
+		})
+
+		var daan = GetQueryString("daan");
+		
+		var duiNum = 0;
+		$(".ok").click(function(){
+			$(this).css("display", "none");
+			$("ul.droptrue").sortable( "option", "disabled", true );
+			$("ul.dropfalse").sortable( "option", "disabled", true );
+
+			d1 = $("#sortable11").attr("data-aq") == $("#sortable11").children("li").attr("data-as") ? true : false;
+			d2 = $("#sortable12").attr("data-aq") == $("#sortable12").children("li").attr("data-as") ? true : false;
+			d3 = $("#sortable13").attr("data-aq") == $("#sortable13").children("li").attr("data-as") ? true : false;
+			d4 = $("#sortable14").attr("data-aq") == $("#sortable14").children("li").attr("data-as") ? true : false;
+			d5 = $("#sortable15").attr("data-aq") == $("#sortable15").children("li").attr("data-as") ? true : false;
+			if (d1)
+			{
+				$("#xz11").addClass("jg1");
+			}else{
+				if ($("#sortable11").children("li").attr("data-as") == null)
+				{
+					$("#xz11").addClass("jg2");
+				}else{
+					$("#xz11").addClass("jg3");
+				}
+			}
+			if (d2)
+			{
+				$("#xz12").addClass("jg1");
+			}else{
+				if ($("#sortable12").children("li").attr("data-as") == null)
+				{
+					$("#xz12").addClass("jg2");
+				}else{
+					$("#xz12").addClass("jg3");
+				}
+			}
+			if (d3)
+			{
+				$("#xz13").addClass("jg1");
+			}else{
+				if ($("#sortable13").children("li").attr("data-as") == null)
+				{
+					$("#xz13").addClass("jg2");
+				}else{
+					$("#xz13").addClass("jg3");
+				}
+			}
+			if (d4)
+			{
+				$("#xz14").addClass("jg1");
+			}else{
+				if ($("#sortable14").children("li").attr("data-as") == null)
+				{
+					$("#xz14").addClass("jg2");
+				}else{
+					$("#xz14").addClass("jg3");
+				}
+			}
+			if (d5)
+			{
+				$("#xz15").addClass("jg1");
+			}else{
+				if ($("#sortable15").children("li").attr("data-as") == null)
+				{
+					$("#xz15").addClass("jg2");
+				}else{
+					$("#xz15").addClass("jg3");
+				}
+			}
+			if(d1 && d2 && d3 && d4 && d5){
+				daan = Number(daan) +1;
+				$( "#dialog1" ).dialog({width:580,close: function( event, ui ) {location.href = "8c.html?daan=" + daan}});
+			}else{
+				$( "#dialog2" ).dialog({width:580,close: function( event, ui ) {location.href = "8c.html?daan=" + daan}});
+			}
+		})
+		$(".close").click(function(){
+			location.href = "8b.html"
+		})
+	})
+</script>
+
+	</body>
+
+</html>

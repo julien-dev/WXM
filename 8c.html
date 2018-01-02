@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" contect="libing, abingdesign@gmail.com" />
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/libing.css" />
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+		<style>
+			body{font-size: 14px;}
+			.t a, .t a:hover{
+				color:#FF6600;
+				text-decoration: none;
+			}
+
+			.t1{position: relative;}
+			.ok{position: absolute; top: 425px; left: 840px;}
+			.dui, .cuo{}
+			.close{width: 18px; height: 18px; position: absolute; right: 10px; top: 10px;}
+			.tList{position: absolute; left: 640px; top: 82px;}
+			.xz1{background: url(img/quizradio.png) 30px 9px no-repeat; width: 100px; height: 27px; float: left;cursor: pointer; margin-top: 2px;}
+			.xz1c{background-image: url(img/quizradiochecked.png);}
+			.xz2{background: url(img/bg_quizChoiceFeedback.png) 0px 39px no-repeat; width: 20px; height: 27px; float: left; margin-top: 2px;}
+			.jg1{background-position: 0px -33px;}
+			.jg2{background-position: 0px -75px;}
+			.jg3{background-position: 0px 10px;}
+			.ok{cursor: pointer;}
+			.close{cursor: pointer;}
+			.kscs{ position: absolute; cursor: pointer;}
+
+		</style>
+		<script>
+			
+  </script>
+		
+	</head>
+
+<body>
+<div class="t">
+	<div class="animated1" style="left: 23px; top: 30px; font-size: 20px; font-weight:bold;">测试结束</div>
+	<div class="animated1" style="left: 23px; top: 95px; font-size: 16px;" id="daantxt">在本次测验中，你一共回答正确  <span id="daan" style="color:#FF6600;">0</span> 个<br/>问题。再接再厉！相信你一定能做得更<br/>好！</div>
+	<div class="animated1" style="left: 23px; top: 230px; font-size: 16px;">你要继续往下学习，还是先复习本章，<br/>然后再来一次？</div>
+	<img class="animated1" style="left: 23px; top: 297px; " src="img/dd.png"/>
+	<div class="animated1" style="left: 35px; top: 292px; font-size: 16px;color:#FF6600;"><a href="8.html">再试一次</a></div>
+	<img class="animated1" style="left: 23px; top: 330px; " src="img/dd.png"/>
+	<div class="animated1" style="left: 35px; top: 325px; font-size: 16px;color:#FF6600;"><a href="1.html">重复学习这章内容</a></div>
+	<img class="animated1" style="left: 23px; top: 365px; " src="img/dd.png"/>
+	<div class="animated1" style="left: 35px; top: 360px; font-size: 16px;color:#FF6600;"><a href="9.html">继续下一页的学习</a></div>
+	
+	<img src="pic/t11.png" class="animated1" style="left: 350px; top: 0px; "/>
+</div>
+
+
+
+<script type="text/javascript">
+	function GetQueryString(name)
+	{
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r!=null)return  unescape(r[2]); return null;
+	}
+
+
+	
+
+	$(document).ready(function(){
+		
+		var daan = GetQueryString("daan");
+		
+		if (daan == 3)
+		{
+			$("#daantxt").html('在本次测验中，恭喜你回答对了所有问<br/>题！继续保持！先信你能够一直做得这<br/>么好！');
+		}else{
+			$("#daan").html(daan);
+		}
+	})
+</script>
+</body>
+
+</html>

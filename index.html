@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" contect="libing, abingdesign@gmail.com" />
+		<title>DQ380变速箱-基础介绍</title>
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/animations.css" />
+		<link rel="stylesheet" href="css/libing.css" />
+		<script type="text/javascript" src="js/APIWrapper.js" ></script>
+		<script type="text/javascript" src="js/SCOFunctions.js" ></script>
+		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			var scostaut = "incomplete";
+			var url = document.URL;
+			if (url.indexOf("http")>=0)
+			{
+				loadPage();
+			}
+
+          function setTime(){
+          	if($(".lb-precent").text()=="100%"){
+					scostaut = "completed";
+				}
+				console.log(scostaut);
+          }
+          var times = setInterval(setTime, 1000); 
+			$(window).unload(function(){
+				doQuit(scostaut);
+				console.log("GOODBYE");
+			});
+			
+		})
+		</script>
+	</head>
+
+<body>
+<div class="lb-logo">
+	<div class="lb-moveCircle">DQ380变速箱-基础介绍</div>
+</div>
+<div class="swiper-container" id="swiper-content">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<iframe class="iframe" src="1.html" frameborder="0" scrolling="no"></iframe>
+			<img class="animated zoomInRight delay21 c" style="left: 827px; top: 386px;" src="pic/btnstart.png" id="p1Start" />
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+			<div class="animated zoomIn delay0 c" id="p7reStart" style="left: 20px; top: 320px;  width:150px; height:33px;"></div>
+		<div class="animated zoomIn delay0 c" id="p7next" style="left: 20px; top: 355px;  width:150px; height:33px;"></div>
+		</div>
+		<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+			<div class="btnBg1 c" id="page8back"></div>
+		</div>
+		<!--<div class="swiper-slide">
+			<iframe class="iframe" src="" frameborder="0" scrolling="no"></iframe>
+		</div>-->
+	</div>
+	<!--
+	<div class="swiper-button-prev swiper-button-white sprev"></div>
+	<div class="swiper-button-next swiper-button-white snext"></div>
+	-->
+	
+</div>
+<div id="sprev" class="swiper-button-prev swiper-button-white sprev"></div>
+<div class="menu-open c" data-open="1"><img src="img/openmenu.png" /></div>
+<div id="snext" class="swiper-button-next swiper-button-white snext"></div>
+
+<div class="lb-foot">
+	<div class="swiper-container" id="swiper-menu">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide c"><img src="pic/a.jpg" /><span>起始页</span><div class="iconVisit" style="top: 14px; right: -3px;"></div><div class="sBorder"></div></div>
+			<div class="swiper-slide c"><img src="pic/b.jpg" /><span>内容</span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<div class="swiper-slide c"><img src="pic/c.jpg" /><span></span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<div class="swiper-slide c"><img src="pic/d.jpg" /><span></span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<div class="swiper-slide c"><img src="pic/e.jpg" /><span></span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<div class="swiper-slide c"><img src="pic/f.jpg" /><span></span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<div class="swiper-slide c"><img src="pic/g.jpg" /><span></span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div><div class="sBorder"></div></div>
+			<div class="swiper-slide c"><img src="pic/t.png" /><span>测试</span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div><div class="sBorder"></div></div>
+			<div class="swiper-slide c"><img src="pic/h.jpg" /><span>总结</span><div class="iconVisit hide" style="top: 14px; right: -3px;"></div></div>
+			<!--<div class="swiper-slide"><img src="pic/i.jpg" /><span>总结与测试</span></div>-->
+		</div>
+	</div>
+	
+	<div class="menu-btn hide animated zoomIn">
+		<div class="swiper-button-prev" id="id-swiper-button-prev"></div>
+		<div class="swiper-button-next" id="id-swiper-button-next"></div>
+	</div>
+	
+	<span style="font-size: 14px; padding-right: 5px;">
+		<span class="lb-help c">帮助</span>
+	</span>
+	<span style="font-size: 14px; padding-left: 5px; position: absolute; right: 0;">
+		进度 <span class="lb-precent">0%</span> | <span class="page-Num">1/9</span>
+	</span>
+</div>
+
+<div class="popHelp hide" style="position: absolute; top: 100px; left: 50%; margin-left: -490px; z-index: 1000; border: 1px solid #ccc;">
+	<div class="close" style="position: absolute; right: 10px; top: 10px; width: 20px; height: 20px;;"></div>
+	<img src="pic/help.png"/>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript" src="js/libing.js"></script>
+<script type="text/javascript" src="js/btn.js"></script>
+<script type="text/javascript" src="full/full.js"></script>
+</body>
+
+</html>

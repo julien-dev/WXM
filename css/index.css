@@ -1,0 +1,336 @@
+* {
+				margin: 0;
+				padding: 0
+			}
+			
+			body {
+				font-size: 17px;
+				color: #FFFFFF;
+				/*font-family: "å¾®è½¯é›…é»‘";*/
+			}
+			
+			.a {
+				border: 1px solid white;
+			}
+			
+			.cursor {
+				cursor: pointer;
+			}
+			
+			.container {
+				width: 980px;
+				height: 504px;
+				margin: 0px auto;
+				background: url(../img/bg1.png) no-repeat left top;
+				position: relative;
+			}
+			
+			.title {
+				width: 332px;
+				height: 56px;
+				border-bottom: 1px solid rgb(89, 110, 141);
+			}
+			
+			.title span {
+				display: inline-block;
+				margin-left: 25px;
+				margin-top: 32px;
+			}
+			
+			.spot {
+				display: inline-block;
+				height: 7px;
+				width: 7px;
+				background-color: rgb(89, 110, 141);
+				position: absolute;
+				top: 52.5px;
+				left: 332px;
+			}
+			
+			.different1 {
+				position: absolute;
+				top: 100px;
+				left: 38px;
+				font-size: 16px;
+				width: 320px;
+			}
+			.different2 {
+				position: absolute;
+				top: 155px;
+				left: 38px;
+				font-size: 16px;
+				width: 320px;
+			}
+			
+			.list {
+				position: absolute;
+				left: 38px;
+				top: 230px;
+				color: rgb(239, 162, 34);
+				font-weight: bold;
+				font-family: "é»‘ä½“";
+			}
+			
+			.list img {
+				width: 10px;
+				height: 15px;
+			}
+			
+			.list-two {
+				margin-top: 18px;
+			}
+			
+			.img01 {
+				position: absolute;
+				top: 90px;
+				left: 360px;
+			}
+			
+			.hot {
+				position: absolute;
+				top: 30px;
+				left: 250px;
+			}
+			
+			.one {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 36px;
+				left: 175px;
+			}
+			
+			.two {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 160px;
+				left: 64px;
+			}
+			
+			.three {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 130px;
+				left: 220px;
+			}
+			
+			.four {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 150px;
+				left: 376px;
+			}
+			
+			.five {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 72px;
+				left: 95px;
+			}
+			
+			.six {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 150px;
+				left: 70px;
+			}
+			
+			.seven {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 128px;
+				left: 120px;
+			}
+			
+			.eight {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 208px;
+				left: 140px;
+			}
+			
+			.nine {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 80px;
+				left: 256px;
+			}
+			
+			.ten {
+				width: 22px;
+				height: 27px;
+				background: url(../img/hotspotLink.png);
+				position: absolute;
+				top: 177px;
+				left: 285px;
+			}
+			
+			.img02 {
+				position: absolute;
+				top: 90px;
+				left: 360px;
+			}
+			
+			.one-name span,
+			.two-name span,
+			.three-name span,
+			.four-name span {
+				display: inline-block;
+			}
+			
+			.one-name {
+				position: absolute;
+				top: 175px;
+				left: 389px;
+			}
+			
+			.two-name {
+				position: absolute;
+				top: 300px;
+				left: 76px;
+			}
+			
+			.three-name {
+				position: absolute;
+				top: 259px;
+				left: 423px;
+			}
+			
+			.four-name {
+				position: absolute;
+				top: 290px;
+				left: 590px;
+			}
+			
+			.five-name {
+				position: absolute;
+				top: 200px;
+				left: 262px;
+			}
+			
+			.six-name {
+				position: absolute;
+				top: 284px;
+				left: 236px;
+			}
+			
+			.seven-name {
+				position: absolute;
+				top: 265px;
+				left: 490px;
+			}
+			
+			.eight-name {
+				position: absolute;
+				top: 345px;
+				left: 509px;
+			}
+			
+			.nine-name {
+				position: absolute;
+				top: 215px;
+				left: 623px;
+			}
+			
+			.ten-name {
+				position: absolute;
+				top: 310px;
+				left: 654px;
+			}
+			
+			.one-detail {
+				border: 2px solid rgb(167, 201, 223);
+				width: 151px;
+				height: 55px;
+				background-color: rgb(37, 118, 174);
+				text-align: center;
+				line-height: 55px;
+				position: absolute;
+				left: 12px;
+			}
+			
+			.inner {
+				width: 0;
+				height: 0;
+				border-top: 12px solid transparent;
+				border-bottom: 12px solid transparent;
+				border-right: 12px solid rgb(167, 201, 223);
+				position: absolute;
+				top: 20px;
+			}
+			
+			.center {
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-right: 10px solid rgb(37, 118, 174);
+				position: absolute;
+				top: 22px;
+				left: 2px;
+			}
+			
+			.outer {
+				width: 0;
+				height: 0;
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;
+				border-right: 8px solid rgb(255, 255, 255);
+				position: absolute;
+				top: 24px;
+				left: 4px;
+			}
+			
+			.inner-two {
+				width: 0;
+				height: 0;
+				border-top: 12px solid transparent;
+				border-bottom: 12px solid transparent;
+				border-left: 12px solid rgb(167, 201, 223);
+				position: absolute;
+				top: 20px;
+				left: 166px;
+			}
+			
+			.center-two {
+				width: 0;
+				height: 0;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+				border-left: 10px solid rgb(37, 118, 174);
+				position: absolute;
+				top: 22px;
+				left: 166px;
+			}
+			
+			.outer-two {
+				width: 0;
+				height: 0;
+				border-top: 8px solid transparent;
+				border-bottom: 8px solid transparent;
+				border-left: 8px solid rgb(255, 255, 255);
+				position: absolute;
+				top: 24px;
+				left: 166px;
+			}
+			
+			.hide {
+				display: none;
+			}

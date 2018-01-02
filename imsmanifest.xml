@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.5 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-D60E59AE10A040C7E756E3DE4EC42990" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-98941A38B0A7AE6A5290770BD1965679">
+    <organization identifier="ORG-98941A38B0A7AE6A5290770BD1965679" structure="hierarchical">
+      <title>DQ380变速箱-基础介绍</title>
+      <item identifier="ITEM-2C780F00AB6C3A340E4777D400116835" identifierref="RES-CDFB85FDD3CFC77BD7653032AE0FF6A2" isvisible="true">
+        <title>DQ380变速箱-基础介绍</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-CDFB85FDD3CFC77BD7653032AE0FF6A2" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <file href="index.html" />
+      <file href="js/APIWrapper.js" />
+      <file href="js/SCOFunctions.js" />
+    </resource>
+    
+  </resources>
+</manifest>
+
